@@ -5,7 +5,7 @@ export function Experience() {
   const experiences = [
     {
       title: 'Senior Software Engineer',
-      company: 'Tech Solutions Inc.',
+      company: 'Tonys Company.',
       location: 'Nairobi, Kenya',
       period: '2022 - Present',
       type: 'Full-time',
@@ -20,7 +20,7 @@ export function Experience() {
     },
     {
       title: 'Full Stack Developer',
-      company: 'Digital Innovations Ltd.',
+      company: 'Tonys  Company.',
       location: 'Nairobi, Kenya',
       period: '2021 - 2022',
       type: 'Full-time',
@@ -35,7 +35,7 @@ export function Experience() {
     },
     {
       title: 'Junior Software Developer',
-      company: 'StartupHub Kenya',
+      company: 'Tonys Company',
       location: 'Nairobi, Kenya',
       period: '2020 - 2021',
       type: 'Full-time',

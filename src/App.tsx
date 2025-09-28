@@ -117,17 +117,25 @@ function App() {
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       
       <main className="relative">
-        {activeSection === 'about' && <About />}
-        {activeSection === 'experience' && <Experience />}
-        {activeSection === 'skills' && <Skills />}
-        {activeSection === 'portfolio' && (
+        <div className={activeSection === 'about' ? 'block' : 'hidden'}>
+          <About />
+        </div>
+        <div className={activeSection === 'experience' ? 'block' : 'hidden'}>
+          <Experience />
+        </div>
+        <div className={activeSection === 'skills' ? 'block' : 'hidden'}>
+          <Skills />
+        </div>
+        <div className={activeSection === 'portfolio' ? 'block' : 'hidden'}>
           <Portfolio 
             projects={projects} 
             onVideoUpload={handleVideoUpload}
             setProjects={setProjects}
           />
-        )}
-        {activeSection === 'contact' && <Contact />}
+        </div>
+        <div className={activeSection === 'contact' ? 'block' : 'hidden'}>
+          <Contact />
+        </div>
       </main>
       
       <Footer />
